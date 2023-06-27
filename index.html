@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body id="body" onresize="resizeFunction()">
+    <br />
+    <button onclick="helloEvent()" id="btn" class="btns" style="background-color:blueviolet; ">Click Me</button>
+   
+    <button class="btn2" style="background-color: blue;">Click Me</button>
+
+    <div id="para1" style="border: 1px solid red;">
+    
+        <ul id="list1">
+            <li class="item">A</li>
+            <li class="item">B</li>
+            <li class="item">A</li>
+            <li class="item">B</li>
+        </ul>
+        <ul id="lists" class="list">
+            <li class="items">A</li>
+            <li class="items">B</li>
+            <li class="items">A</li>
+            <li class="items">B</li>
+        </ul>
+        <ul id="list2" class="list">
+            <li class="items">x</li>
+            <li class="items">y</li>
+        </ul>
+        <div id="test">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, nulla.</p>
+        </div>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+      sapiente voluptatibus. Sint voluptatem itaque aliquid error velit maiores
+      natus officia nesciunt placeat adipisci et, distinctio delectus nostrum
+      blanditiis quasi minus.
+    </p>
+    <p id="ids" class="names">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        sapiente voluptatibus. Sint voluptatem itaque aliquid error velit maiores
+        natus officia nesciunt placeat adipisci et, distinctio delectus nostrum
+        blanditiis quasi minus.
+      </p>
+    </div>
+    <div id ="div1">
+        <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, maiores?<br>
+
+        </div>
+    </div>
+    <form action="" onsubmit="submitFun()">
+        <label for "">Name</label><input type="text" id="fname"  onfocus="focusFunction(this)" onblur="blurFun(this)"
+          onchange="changeFun(this)"  onselect="selectFun()" oninvalid="alert('Please fill the name')" required> <br>
+        <label for "">Class</label><input type="text" id="" onfocus="focusFunction(this)" onblur="blurFun(this)"
+        oninput="inputFun(this)"> <br>
+        <label for "">Country</label>
+        <select id="" onchange="changeFun(this)"> 
+           <option value="India">India</option>
+           <option value="USA">USA</option>
+           <option value="NEPAL">NEPAL</option>
+           <option value="ENGLAND">ENGLAND</option>
+           <option value="JAPAN">JAPAN</option>
+        </select>
+        <input type="submit">
+    </form>
+    <br>
+    <div id="t1" style="border:1px solid red">
+        
+    </div><br><br>
+    <div id ="t2" style="width:200px; height:200px; background-color: blue;"></div><br>
+    <div id ="t3" style="width:200px; height:200px; background-color: indianred;"></div>
+    <button onclick="stopAnime()">Stop animation</button><br>
+
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">close Window</button>
+    <button onclick="moveWindow()">move Window (moveTo)</button>
+    <button onclick="moveWindow2()">move Window (moveBy)</button>
+    <button onclick="resizeWindow()">resize Window (resizeto)</button>
+    <button onclick="resizeWindow2()">resize Window (resizeby)</button>
+    <button onclick="scrollWindow()" style="position:fixed; left:50px; bottom:50px;">scroll Window (scrollby)</button>
+    <button onclick="scrollWindow2()" style="position:fixed; left:300px; bottom:50px;">scroll Window (scrollTo)</button>
+
+    <div id="outer" style = "background-color: blue; position:absolute; width:80%;">
+        <h2>Outer</h2>
+        <div id ="inner" style = "background-color: red; width:900px; margin-left: 5%; position: relative; margin-bottom: 3%; 
+        display: flex; height:200px;">
+            <h2>inner</h2>
+            <div style="background-color: grey; margin:7%; padding: 3%;">AB</div>
+            <div style="background-color: grey;  margin:7%; padding: 3%;" >CD</div>
+            <div id="child-c" style="background-color: grey; margin:7%; padding: 3%;">DE</div>
+            <div style="background-color: grey; margin:7%; padding: 3%;" id="FG">FG</div>
+        </div>
+    </div>
+<script src="./main.js"></script>
+  </body>
+</html>
